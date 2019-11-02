@@ -12,10 +12,10 @@
 */
 
 Route::group(['prefix' =>'admin'], function(){
-    Route::get('news/create'.'NewsController@add');
+    Route::get('news/create','NewsController@add');
     //
-    Route::get('profile/create'.'Admin\ProfileController@add');
-    Route::get('profile/edit'.'Admin\ProfileController@edit');
+    Route::get('profile/create','Admin\ProfileController@add');
+    Route::get('profile/edit','Admin\ProfileController@edit');
     
 });
     /* prefixパラメータでadminディレクトリを纏め無名関数functionのの設定を
